@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body, button, input {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.tremor {
+    animation: tremor 0.5s infinite;
+}
+
+.fromBottom {
+    animation: fromBottom 2s;
+}
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    width: min(42.8rem, 90%);
+    background-color: #FFFFFF;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.6rem;
+    text-align: center;
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.8);
+}
+
+img {
+    width: min(30rem, 100%);
+    cursor: pointer;
+}
+
+/* Screen 1 */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #34355B;
+    margin-bottom: 1.6rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(52, 53, 91, 0.8);
+    margin-bottom: 2rem;
+}
+
+/* Screen 2 */
+h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #34355B;
+    margin-bottom: 1.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 6rem;
+    font-family: "Dancing Script", cursive;
+    background-color: #E4EDF1;
+    padding: 1rem;
+    box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.5);
+    animation: fromBottom 2s;
+}
+
+.screen2 img {
+    cursor: default;
+    margin-bottom: 6rem;
+}
+
+button {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: #FF9500;
+    padding: 1.6rem;
+    border-radius: 0.4rem;
+    transition: background .3s;
+}
+
+button:hover {
+    background-color: #db7f00;
+}
+
+/* Animations */
+@keyframes tremor {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes fromBottom {
+    0% {
+        transform: scale(0.2) translateY(80rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
